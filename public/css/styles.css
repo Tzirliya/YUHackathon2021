@@ -1,0 +1,172 @@
+.header {
+    text-align: center;
+}
+body{
+  background-color: #128CFC;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label::after{
+  content: "*";
+  color: red;
+}
+label, a {
+  color: white
+}
+h1, h6{
+  color: white
+}
+li a{
+  color: blue;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+form{
+  border: black 1px solid;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+input{
+  width: 30vw;
+}
+.card-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin: 20px;
+    width: 100%;
+}
+
+* {
+  box-sizing: border-radius;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  
+  position: absolute;
+  top: 80px; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  
+  display: grid;
+  /* place-items: center; */
+  background-color: #128CFC;
+}
+
+.items-head p{
+  padding: 5px 20px;
+  margin: 10px;
+  color: #0B5AA2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.items-head hr {
+  width: 20%;
+  margin: 0px 30px;
+  border: 1px solid #0B5AA2;
+}
+
+.items {
+  width: 300px;
+  background: #fffffe;
+  box-shadow: 0 3px 6px rgba(black,0.16), 0 3px 6px rgba(black,0.23);
+  border-top: 10px solid #0B5AA2;
+}
+
+.items-body {
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.items-body-content {
+  padding: 10px;
+  padding-right: 0px;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  font-size: 20px;
+  grid-gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.items-body-content:hover:not(.values) {
+  border-radius: 15px;
+  border: 1px solid #0B5AA2;
+}
+
+.values {
+  border-radius: 15px;
+  border: 1px solid #0B5AA2;
+  cursor: default;
+  display: inline-block;
+}
+h3{
+  text-align: center;
+}
+
+.button-next, .items, .enter{
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-next, .enter{
+  margin-top: 20px; 
+}
+.enter{
+  width: 100px;
+  margin-bottom: 10px;
+}
+.selected {
+  border: 3px solid #0B5AA2;
+}
+
+#bubble-explanations {
+  text-align: center;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 10;
+}
+
+.nav-item {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-item a:hover:not(.active) {
+  background-color: #111;
+}

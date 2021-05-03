@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- <script src="/index.js"></script> -->
+    <script type="text/javascript" src="/JS/bubbleSort.js"></script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-item active" href="home.html">Home</a>
+    <a href="/index.html">Logout</a>
+  </nav>
+
+  <h1 class="header">Bubble Sort</h1>
+
+  <div class="container">
+
+    <div class="items">
+      <div class="items-head">
+        <p>Items in Array</p>
+        <hr>
+      </div>
+      <ol id="bubble-values" class="items-body">
+        <li class="items-body-content values" value=2>
+          <h3>2</h3>
+        </li>
+        <li class="items-body-content values" value=4>
+          <h3>4</h3>
+        </li>
+        <li class="items-body-content values" value=1>
+          <h3>1</h3>
+        </li>
+        <li class="items-body-content values" value=5>
+          <h3>5</h3>
+        </li>
+        <li class="items-body-content values" value=3>
+          <h3>3</h3>
+        </li>
+      </ol>
+
+      <div id="bubble-explanations"></div>
+
+    </div>
+
+    
+
+    <div class="button-next">
+      <button id="bubble-next-button" onclick="bubbleSortNext()">
+        <p>Next</p>
+      </button>
+    </div>
+
+  </div>
+
+  
+    
+</body>
+</html>
